@@ -17,11 +17,11 @@ main:
     url: /#news
     weight: 13
   - name: Experience
-    url: en/experience/
+    url: experience/
     weight: 20
   - name: Projects
-    url: en/projects/
+    url: projects/
     weight: 30
   - name: Teaching
-    url: en/teaching/
+    url: teaching/
     weight: 40
