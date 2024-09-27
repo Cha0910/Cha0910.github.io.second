@@ -5,16 +5,16 @@
 
 main:
   - name: Bio
-    url: /
+    url: ko/
     weight: 10
   - name: Papers
-    url: /#papers
+    url: ko/#papers
     weight: 11
   - name: Talks
-    url: /#talks
+    url: ko/#talks
     weight: 12
   - name: News
-    url: /#news
+    url: ko/#news
     weight: 13
   - name: Experience
     url: ko/experience/
