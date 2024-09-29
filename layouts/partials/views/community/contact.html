@@ -1,0 +1,36 @@
+<div class="contact-block" style="display: flex; flex-direction: column; align-items: center;"></div>
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Get "text" }}</p>
+    
+    <div class="contact-info" style="display: flex; flex-direction: row; justify-content: space-around; width: 100%;">
+        <div class="contact-item" style="flex: 1; margin: 10px;">
+            <h3>Email</h3>
+            <p><a href="mailto:{{ .Get "email" }}">{{ .Get "email" }}</a></p>
+        </div>
+        <div class="contact-item" style="flex: 1; margin: 10px;">
+            <h3>Phone</h3>
+            <p>{{ .Get "phone" }}</p>
+        </div>
+        <div class="contact-item" style="flex: 1; margin: 10px;">
+            <h3>Address</h3>
+            <p>
+                {{ .Get "address.street" }}<br>
+                {{ .Get "address.city" }}, {{ .Get "address.region" }}<br>
+                {{ .Get "address.postcode" }}, {{ .Get "address.country" }}
+            </p>
+        </div>
+    </div>
+
+    <div class="coordinates" style="margin-top: 20px;">
+        <h3>Coordinates</h3>
+        <p>Latitude: {{ .Get "coordinates.latitude" }}</p>
+        <p>Longitude: {{ .Get "coordinates.longitude" }}</p>
+    </div>
+
+    {{ if .Get "directions" }}
+    <div class="directions" style="margin-top: 20px;">
+        <h3>Directions</h3>
+        <p><a href="{{ .Get "directions" }}" target="_blank">View on Google Maps</a></p>
+    </div>
+    {{ end }}
+</div>
